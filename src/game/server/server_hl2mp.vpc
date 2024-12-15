@@ -64,6 +64,7 @@ $Project "Server (ChaosBox)"
 		$Folder "CHAOS"
 		{
 			$File	"$SRCDIR\game\shared\chaosbox\blocked.cpp"
+			$File 	"$SRCDIR\game\shared\chaosbox\weapon_physgun.cpp"
 		}
 
 		$Folder	"HL2 DLL"

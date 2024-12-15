@@ -236,6 +236,7 @@ END_RECV_TABLE()
  		RecvPropFloat		( RECVINFO(m_vecVelocity[2]), 0, RecvProxy_LocalVelocityZ ),
 
 		RecvPropVector		( RECVINFO( m_vecBaseVelocity ) ),
+		RecvPropVector		(RECVINFO(m_vecUseAngles)),
 
 		RecvPropEHandle		( RECVINFO( m_hConstraintEntity)),
 		RecvPropVector		( RECVINFO( m_vecConstraintCenter) ),
@@ -287,6 +288,7 @@ END_RECV_TABLE()
 
 		RecvPropFloat	(RECVINFO(m_flMaxspeed)),
 		RecvPropInt		(RECVINFO(m_fFlags)),
+		RecvPropVector	(RECVINFO(m_vecUseAngles)),
 
 
 		RecvPropInt		(RECVINFO(m_iObserverMode), 0, RecvProxy_ObserverMode ),
@@ -1385,6 +1387,13 @@ void C_BasePlayer::CreateWaterEffects( void )
 //-----------------------------------------------------------------------------
 void C_BasePlayer::OverrideView( CViewSetup *pSetup )
 {
+	C_BaseCombatWeapon* pWeapon = GetActiveWeapon();
+	if (pWeapon)
+	{
+		if (pWeapon->OverrideViewAngles()) {
+			pSetup->angles = m_vecUseAngles;
+		}
+	}
 }
 
 bool C_BasePlayer::ShouldInterpolate()

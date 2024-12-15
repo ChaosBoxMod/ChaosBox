@@ -1125,6 +1125,11 @@ private:
 
 	EHANDLE					m_hViewEntity;
 
+public:
+
+		CNetworkQAngle(m_vecUseAngles);
+private:
+
 	// Movement constraints
 	CNetworkHandle( CBaseEntity, m_hConstraintEntity );
 	CNetworkVector( m_vecConstraintCenter );
