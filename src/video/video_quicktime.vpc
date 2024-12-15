@@ -76,8 +76,8 @@ $Project "video_quicktime"
 	{
 		$Lib tier2
 		$File   "$SRCDIR\lib\common\quicktime\QTMLClient.lib"		[$WIN32]
-		$File	"$SRCDIR\DX9SDK\lib\dsound.lib"						[$WIN32]
-		$File	"$SRCDIR\DX9SDK\lib\dxguid.lib"						[$WIN32]
+//		$File	"$SRCDIR\DX9SDK\lib\dsound.lib"						[$WIN32]
+//		$File	"$SRCDIR\DX9SDK\lib\dxguid.lib"						[$WIN32]
 		
 	}
 }

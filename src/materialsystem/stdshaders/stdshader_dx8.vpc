@@ -126,7 +126,7 @@ $Project "stdshader_dx8"
 
 	$Folder	"Link Libraries"
 	{
-		$File	"$SRCDIR\dx9sdk\lib\d3dx9.lib"
+//		$File	"$SRCDIR\dx9sdk\lib\d3dx9.lib"
 		$Lib mathlib
 		$Lib shaderlib
 	}
@@ -136,6 +136,6 @@ $Project "stdshader_dx8"
 	$File	"$SRCDIR\devtools\bin\psh_prep.pl"
 
 	$Shaders	"stdshader_dx9_20b.txt"
-	$Shaders	"stdshader_dx9_30.txt"
+	//$Shaders	"stdshader_dx9_30.txt"
 	//$Shaders	"stdshader_dx10.txt"
 }

@@ -57,6 +57,6 @@ $Project "Getbugs"
 	{
 		$File	"$SRCDIR\lib\common\expdlln.lib"
 		$Lib tier2
-		$File	"$SRCDIR\lib\common\trktooln.lib"
+//		$File	"$SRCDIR\lib\common\trktooln.lib"
 	}
 }
