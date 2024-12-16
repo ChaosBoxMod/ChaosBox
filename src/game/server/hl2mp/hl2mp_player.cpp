@@ -172,6 +172,7 @@ void CHL2MP_Player::GiveAllItems( void )
 	END_LUA_CALL_HOOK(1, 0);
 #else
 	EquipSuit();
+#endif
 
 	CBasePlayer::GiveAmmo( 255,	"Pistol");
 	CBasePlayer::GiveAmmo( 255,	"AR2" );
@@ -203,7 +204,7 @@ void CHL2MP_Player::GiveAllItems( void )
 	GiveNamedItem( "weapon_slam" );
 
 	GiveNamedItem( "weapon_physcannon" );
-	GiveNamedItem( "weapon_physgun" )
+	GiveNamedItem("weapon_physgun");
 }
 
 void CHL2MP_Player::GiveDefaultItems( void )
