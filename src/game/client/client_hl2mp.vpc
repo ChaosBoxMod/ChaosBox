@@ -39,6 +39,8 @@ $Project "Client (ChaosBox)"
 		{
 			$File	"$SRCDIR\game\shared\chaosbox\blocked.cpp"
 			$File 	"$SRCDIR\game\shared\chaosbox\weapon_physgun.cpp"
+			$File	"$SRCDIR\game\shared\chaosbox\weapon_pg.cpp"
+			$File	"$SRCDIR\game\client\secobmod\c_weapon_portalgun.cpp"
 		}
 
 		$Folder	"HL2 DLL"

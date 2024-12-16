@@ -65,6 +65,13 @@ $Project "Server (ChaosBox)"
 		{
 			$File	"$SRCDIR\game\shared\chaosbox\blocked.cpp"
 			$File 	"$SRCDIR\game\shared\chaosbox\weapon_physgun.cpp"
+			$File	"$SRCDIR\game\shared\chaosbox\weapon_pg.cpp"
+			$File	"$SRCDIR\game\server\secobmod\companioncube.cpp"
+			$File	"$SRCDIR\game\server\secobmod\Func_PortalMonitor1.cpp"
+			$File	"$SRCDIR\game\server\secobmod\Func_PortalMonitor2.cpp"
+			$File	"$SRCDIR\game\server\secobmod\npc_secobmodportal1.cpp"
+			$File	"$SRCDIR\game\server\secobmod\npc_secobmodportal2.cpp"
+			$File	"$SRCDIR\game\server\secobmod\vehicle_passenger_seat.cpp"
 		}
 
 		$Folder	"HL2 DLL"
