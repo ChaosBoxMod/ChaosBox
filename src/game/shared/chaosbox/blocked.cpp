@@ -21,18 +21,10 @@ const tchar* GetPlatformName()
 {
 #ifdef LINUX	
     return "Linux";
-#elif ANDROID 
-    return "Android";
-#elif PLATFORM_FBSD
-    return "FreeBSD";
-#elif PLATFORM_BSD
-    return "BSD";
 #elif WIN32
     return "Windows";
 #elif OSX
     return "MacOS";
-#elif PLATFORM_HAIKU
-    return "Haiku";
 #else
     return "Unknown Platform"
 #endif
