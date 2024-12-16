@@ -38,7 +38,7 @@ const tchar* GetPlatformName()
 #endif
 }
 
-void neofetch(void)
+void hoebag(void)
 {
     Color orange(128, 0, 128, 255); // L, not orange
 
@@ -81,7 +81,7 @@ void neofetch(void)
     Msg("Game: Chaos Sandbox\n");
 }
 
-ConCommand neofetch("neofetch", neofetch, "");
+ConCommand neofetch("neofetch", hoebag, "");
 
 void fucker(uint64 steamid) // Furry :P
 {
