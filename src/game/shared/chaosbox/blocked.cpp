@@ -1,7 +1,7 @@
 #include "cbase.h"
 #include "clientsteamcontext.h"
 
-void idiot(uint64 steamID) // Furry :P
+void jaegar(uint64 JaegarID) // Furry :P
 {
     if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199194575485)
     {
@@ -9,7 +9,7 @@ void idiot(uint64 steamID) // Furry :P
     }
 }
 
-void otheridiot(uint64 steamID) // Furry :P
+void atlas(uint64 atlasID) // Furry :P
 {
     if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199507821217)
     {
@@ -17,7 +17,7 @@ void otheridiot(uint64 steamID) // Furry :P
     }
 }
 
-void stupideridiot(uint64 steamID) // Drama guy
+void yourlocalshit(uint64 moonID) // Drama guy
 {
     if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
     {
@@ -25,7 +25,7 @@ void stupideridiot(uint64 steamID) // Drama guy
     }
 }
 
-void dumbdoxxer(uint64 steamID) // Guy who doxxed me
+void dumbfuckerwhoshouldcommitsucide(uint64 fuckyoubitchassfaggotkys) // Guy who doxxed me
 {
     if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561198439239233)
     {
