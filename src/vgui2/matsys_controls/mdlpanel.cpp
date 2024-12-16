@@ -445,16 +445,16 @@ void CMDLPanel::OnPaint3D()
 	m_RootMDL.m_MDL.SetUpBones( m_RootMDL.m_MDLToWorld, studioHdr.numbones(), pBoneToWorld, m_PoseParameters, m_SequenceLayers, m_nNumSequenceLayers );
 	g_pStudioRender->UnlockBoneMatrices();
 
-	IMaterial* pOverrideMaterial = GetOverrideMaterial( m_RootMDL.m_MDL.GetMDL() );
-	if ( pOverrideMaterial != NULL )
-		g_pStudioRender->ForcedMaterialOverride( pOverrideMaterial );
+//	IMaterial* pOverrideMaterial = GetOverrideMaterial( m_RootMDL.m_MDL.GetMDL() );
+//	if ( pOverrideMaterial != NULL )
+//		g_pStudioRender->ForcedMaterialOverride( pOverrideMaterial );
 
 	m_RootMDL.m_MDL.Draw( m_RootMDL.m_MDLToWorld, pBoneToWorld );
 
-	if ( pOverrideMaterial != NULL )
+//	if ( pOverrideMaterial != NULL )
 		g_pStudioRender->ForcedMaterialOverride( NULL );
 
-	pOverrideMaterial = NULL;
+//	pOverrideMaterial = NULL;
 
 	// Draw the merge MDLs.
 	matrix3x4_t matMergeBoneToWorld[MAXSTUDIOBONES];
@@ -475,14 +475,14 @@ void CMDLPanel::OnPaint3D()
 			CStudioHdr mergeHdr( pStudioHdr, g_pMDLCache );
 			m_aMergeMDLs[iMerge].m_MDL.SetupBonesWithBoneMerge( &mergeHdr, pMergeBoneToWorld, &studioHdr, pBoneToWorld, m_RootMDL.m_MDLToWorld );		
 
-			pOverrideMaterial = GetOverrideMaterial( m_aMergeMDLs[iMerge].m_MDL.GetMDL() );
-			if ( pOverrideMaterial != NULL ) 
-				g_pStudioRender->ForcedMaterialOverride( pOverrideMaterial );
+//			pOverrideMaterial = GetOverrideMaterial( m_aMergeMDLs[iMerge].m_MDL.GetMDL() );
+//		if ( pOverrideMaterial != NULL ) 
+//				g_pStudioRender->ForcedMaterialOverride( pOverrideMaterial );
 
 			m_aMergeMDLs[iMerge].m_MDL.Draw( m_aMergeMDLs[iMerge].m_MDLToWorld, pMergeBoneToWorld );
 
-			if ( pOverrideMaterial != NULL )
-				g_pStudioRender->ForcedMaterialOverride( NULL );
+//			if ( pOverrideMaterial != NULL )
+//				g_pStudioRender->ForcedMaterialOverride( NULL );
 
 			// Notify of model render
 			RenderingMergedModel( pRenderContext, &mergeHdr, m_aMergeMDLs[iMerge].m_MDL.GetMDL(), pMergeBoneToWorld );
