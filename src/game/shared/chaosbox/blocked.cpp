@@ -38,7 +38,7 @@ const tchar* GetPlatformName()
 #endif
 }
 
-void neofetch(void)
+void hoebag(void)
 {
     Color orange(128, 0, 128, 255); // L, not orange
 
@@ -81,9 +81,10 @@ void neofetch(void)
     Msg("Game: Chaos Sandbox\n");
 }
 
-ConCommand neofetch("neofetch", neofetch, "");
+ConCommand neofetch("neofetch", hoebag, "");
 
-void fucker(uint64 steamid) // Furry :P
+// Blocking's begin
+void fucker(uint64 steamid)
 {
     if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199194575485)
     {
@@ -95,12 +96,17 @@ void fucker(uint64 steamid) // Furry :P
         Error("FUCK YOU");
     }
 
-    elif (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
+    elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
     {
-        Error("FUCK YOU");
+        Error("FUCK YOU AND YOUR DICKRIDERS, I HOPE YOU KYS DUMB FAGGOT SUCK MORE DICK");
     }
 
-    elif (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561198439239233)
+    elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199560025992)
+    {
+        Error("FUCK YOU AND YOUR BOYFRIEND DUNCAN, KYS NIGGER");
+    }
+
+    elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561198439239233)
     {
         for (int i = 0; i < 200000000000000000; ++i) {
             Error("FUCK OFF YOU FAGGOT WITH NO FUCKING LIFE I HOPE YOUR COUNTRY FAILS #FREEPALESTINE YOU GAY FAGGOT");
