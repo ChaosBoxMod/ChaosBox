@@ -158,7 +158,7 @@ public:
 	QAngle			m_targetRotation;
 	float			m_timeToArrive;
 
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// set up the modified pickup angles... allow the player to rotate the object in their grip
 	QAngle		m_vecRotatedCarryAngles;
@@ -186,7 +186,7 @@ BEGIN_SIMPLE_DATADESC( CGravControllerPoint )
 	DEFINE_FIELD( m_attachedPhysicsBone,		FIELD_SHORT ),
 	DEFINE_FIELD( m_targetRotation,		FIELD_VECTOR ),
 	DEFINE_FIELD( m_timeToArrive,			FIELD_FLOAT ),
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// set up the fields for our added vars
 	DEFINE_FIELD( m_vecRotatedCarryAngles, FIELD_VECTOR ),
@@ -212,7 +212,7 @@ CGravControllerPoint::CGravControllerPoint( void )
 	m_attachedEntity = NULL;
 	m_attachedPhysicsBone = 0;
 
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// initialize our added vars
 	m_vecRotatedCarryAngles = vec3_angle;
@@ -264,7 +264,7 @@ void CGravControllerPoint::AttachEntity( CBasePlayer *pPlayer, CBaseEntity *pEnt
 	pPhys->GetPosition( &position, &angles );
 	SetTargetPosition( vGrabPosition, angles );
 	m_targetRotation = TransformAnglesToPlayerSpace( angles, pPlayer );
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// we need to grab the preferred/non preferred carry angles here for the rotatedcarryangles
 	m_vecRotatedCarryAngles = m_targetRotation;
@@ -423,7 +423,7 @@ public:
 	void OnRestore( void );
 	void Precache( void );
 
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// for overriding the mouse -> view angles (but still calc view angles)
 	bool OverrideViewAngles( void );
@@ -495,7 +495,7 @@ private:
 	CNetworkVector	( m_targetPosition );
 	CNetworkVector	( m_worldPosition );
 
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// this is how we tell if we're rotating what we're holding
 	CNetworkVar( bool, m_bIsCurrentlyRotating );
@@ -524,7 +524,7 @@ BEGIN_NETWORK_TABLE( CWeaponGravityGun, DT_WeaponGravityGun )
 	RecvPropVector( RECVINFO( m_targetPosition ) ),
 	RecvPropVector( RECVINFO( m_worldPosition ) ),
 	RecvPropInt( RECVINFO(m_active) ),
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// also receive if we're rotating what we're holding (by pressing use)
 	RecvPropBool( RECVINFO( m_bIsCurrentlyRotating ) ),
@@ -536,7 +536,7 @@ BEGIN_NETWORK_TABLE( CWeaponGravityGun, DT_WeaponGravityGun )
 	SendPropVector(SENDINFO( m_targetPosition ), -1, SPROP_COORD),
 	SendPropVector(SENDINFO( m_worldPosition ), -1, SPROP_COORD),
 	SendPropInt( SENDINFO(m_active), 1, SPROP_UNSIGNED ),
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// need to seind if we're rotating what we're holding
 	SendPropBool( SENDINFO( m_bIsCurrentlyRotating ) ),
@@ -586,7 +586,7 @@ BEGIN_DATADESC( CWeaponGravityGun )
 	DEFINE_FIELD( m_movementLength,		FIELD_FLOAT ),
 	DEFINE_FIELD( m_soundState,			FIELD_INTEGER ),
 	DEFINE_FIELD( m_originalObjectPosition,	FIELD_POSITION_VECTOR ),
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	DEFINE_FIELD( m_bIsCurrentlyRotating, FIELD_BOOLEAN ),
 	// end adnan
@@ -640,7 +640,7 @@ bool CGravControllerPoint::UpdateObject( CBasePlayer *pPlayer, CBaseEntity *pEnt
 		return false;
 	}
 
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// if we've been rotating it, set it to its proper new angles (change m_attachedAnglesPlayerSpace while modifier)
 	//Pickup_GetRotatedCarryAngles( pEntity, pPlayer, pPlayer->EntityToWorldTransform(), angles );
@@ -678,7 +678,7 @@ bool CGravControllerPoint::UpdateObject( CBasePlayer *pPlayer, CBaseEntity *pEnt
 	return true;
 }
 
-#ifdef OMOD
+#ifdef HL2MP
 // adnan
 // this is where we say that we dont want ot apply the current calculated view angles
 //-----------------------------------------------------------------------------
@@ -1365,7 +1365,7 @@ void CWeaponGravityGun::ItemPostFrame( void )
 	if (!pOwner)
 		return;
 
-#ifdef OMOD
+#ifdef HL2MP
 	// adnan
 	// this is where we check if we're orbiting the object
 	
@@ -1401,7 +1401,7 @@ void CWeaponGravityGun::ItemPostFrame( void )
 
 	if ( pOwner->m_nButtons & IN_ATTACK )
 	{
-#if defined( OMOD )
+#if defined( HL2MP )
 		if( (pOwner->m_nButtons & IN_USE) ) {
 			pOwner->m_vecUseAngles = pOwner->pl.v_angle;
 		}
