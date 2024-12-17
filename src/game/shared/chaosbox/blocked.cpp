@@ -90,12 +90,12 @@ void fucker(uint64 steamid)
 
     elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
     {
-        Error("FUCK YOU AND YOUR DICKRIDERS, I HOPE YOU KYS DUMB FAGGOT SUCK MORE DICK");
+        Error("FUCK YOU");
     }
 
     elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199560025992)
     {
-        Error("FUCK YOU AND YOUR BOYFRIEND DUNCAN, KYS NIGGER");
+        Error("FUCK YOU");
     }
 
     elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561198439239233)
