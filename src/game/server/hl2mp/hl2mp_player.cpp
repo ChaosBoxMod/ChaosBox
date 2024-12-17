@@ -204,6 +204,9 @@ void CHL2MP_Player::GiveAllItems( void )
 	GiveNamedItem( "weapon_slam" );
 
 	GiveNamedItem( "weapon_physcannon" );
+
+	GiveNamedItem("weapon_portalgun");
+
 	GiveNamedItem("weapon_physgun");
 }
 
