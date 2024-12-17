@@ -1,4 +1,4 @@
---========== Copyleft © 2010, Team Sandbox, Some rights reserved. ===========--
+--========== Copyleft ï¿½ 2010, Team Sandbox, Some rights reserved. ===========--
 --
 -- Purpose: Initialize the base scripted weapon.
 --
@@ -10,6 +10,7 @@ SWEP.playermodel			= "models/weapons/w_357.mdl"
 SWEP.anim_prefix			= "python"
 SWEP.bucket					= 1
 SWEP.bucket_position		= 1
+SWEP.UseHands				= true
 
 SWEP.clip_size				= 6
 SWEP.clip2_size				= -1

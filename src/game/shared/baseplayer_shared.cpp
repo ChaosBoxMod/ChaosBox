@@ -60,6 +60,8 @@
 #include "mathlib/lvector.h"
 #endif
 
+#include "hl2mp_player_shared.h"
+
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
@@ -228,6 +230,10 @@ bool CBasePlayer::UsingStandardWeaponsInVehicle( void )
 
 	return true;
 }
+
+
+extern ConVar c_handmodel;
+
 
 //-----------------------------------------------------------------------------
 // Purpose: Called every usercmd by the player PostThink

@@ -35,6 +35,8 @@ public:
 	DECLARE_PREDICTABLE();
 	// DECLARE_ACTTABLE();
 
+	bool			UseHands;
+
 	acttable_t m_acttable[LUA_MAX_WEAPON_ACTIVITIES];
 	acttable_t *ActivityList( void );
 	int ActivityListCount( void );

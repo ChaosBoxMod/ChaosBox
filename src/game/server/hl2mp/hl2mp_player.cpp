@@ -67,6 +67,8 @@ END_SEND_TABLE()
 BEGIN_DATADESC( CHL2MP_Player )
 END_DATADESC()
 
+extern ConVar c_handmodel;
+
 const char *g_ppszRandomCitizenModels[] = 
 {
 	"models/humans/group03/male_01.mdl",
@@ -143,6 +145,12 @@ void CHL2MP_Player::Precache( void )
 	BaseClass::Precache();
 
 	PrecacheModel ( "sprites/glow01.vmt" );
+	PrecacheModel("models/weapons/c_arms_combine.mdl");
+	PrecacheModel("models/weapons/c_arms_citizen.mdl");
+	PrecacheModel("models/weapons/c_arms_hev.mdl");
+	PrecacheModel("models/weapons/c_arms_refugee.mdl");
+	PrecacheModel("models/weapons/c_arms_cstrike.mdl");
+	PrecacheModel("models/weapons/c_arms_dod.mdl");
 
 	//Precache Citizen models
 	int nHeads = ARRAYSIZE( g_ppszRandomCitizenModels );
@@ -349,6 +357,38 @@ void CHL2MP_Player::Spawn(void)
 	m_Local.m_bDucked = false;
 
 	SetPlayerUnderwater(false);
+
+	if (strcmp(c_handmodel.GetString(), "default") == 0) {
+		GetViewModel(1)->SetModel("models/weapons/c_arms_citizen.mdl");
+	}
+	else if (strcmp(c_handmodel.GetString(), "citizen") == 0)
+	{
+		GetViewModel(1)->SetModel("models/weapons/c_arms_citizen.mdl");
+	}
+	else if (strcmp(c_handmodel.GetString(), "combine") == 0)
+	{
+		GetViewModel(1)->SetModel("models/weapons/c_arms_combine.mdl");
+	}
+	else if (strcmp(c_handmodel.GetString(), "hev") == 0)
+	{
+		GetViewModel(1)->SetModel("models/weapons/c_arms_hev.mdl");
+	}
+	else if (strcmp(c_handmodel.GetString(), "refugee") == 0)
+	{
+		GetViewModel(1)->SetModel("models/weapons/c_arms_refugee.mdl");
+	}
+	else if (strcmp(c_handmodel.GetString(), "cstrike") == 0)
+	{
+		GetViewModel(1)->SetModel("models/weapons/c_arms_cstrike.mdl");
+	}
+	else if (strcmp(c_handmodel.GetString(), "dod") == 0)
+	{
+		GetViewModel(1)->SetModel("models/weapons/c_arms_dod.mdl");
+	}
+	else
+	{
+		GetViewModel(1)->SetModel("models/weapons/c_arms_citizen.mdl");
+	}
 
 	m_bReady = false;
 }
