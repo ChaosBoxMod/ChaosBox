@@ -167,7 +167,7 @@ void CHL2MP_Player::Precache( void )
 void CHL2MP_Player::GiveAllItems( void )
 {
 #if defined ( LUA_SDK )
-	BEGIN_LUA_CALL_HOOK("GiveDefaultItems");
+	BEGIN_LUA_CALL_HOOK("GiveAllItems");
 	lua_pushhl2mpplayer(L, this);
 	END_LUA_CALL_HOOK(1, 0);
 #else

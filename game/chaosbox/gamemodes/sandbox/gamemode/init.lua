@@ -1,4 +1,4 @@
---========== Copyleft © 2010, Team Sandbox, Some rights reserved. ===========--
+--========== Copyleft ï¿½ 2010, Team Sandbox, Some rights reserved. ===========--
 --
 -- Purpose:
 --
@@ -21,9 +21,10 @@ function GM:AddLevelDesignerPlacedObject( pEntity )
   return false
 end
 
-function GM:GiveDefaultItems( pPlayer )
+function GM:GiveAllItems( pPlayer )
   pPlayer:GiveNamedItem( "weapon_physgun" )
-  self.BaseClass.GiveDefaultItems( self, pPlayer )
+  pPlayer:GiveNamedItem("weapon_portalgun")
+  self.BaseClass.GiveAllItems( self, pPlayer )
 end
 
 function GM:ItemShouldRespawn( pItem )
