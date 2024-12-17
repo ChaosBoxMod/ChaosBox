@@ -930,10 +930,11 @@ int CHLClient::Init( CreateInterfaceFn appSystemFactory, CreateInterfaceFn physi
 {
 	void antidebug(void);
 	{
-		if (_DEBUG)
+#ifdef _DEBUG
 		{
 			Error("guest you fucking ni why did you build in debug - YourLocalMoon"); // YourLocalMoon actually said this in my dms lmao
 		}
+#endif
 	}
 
 	InitCRTMemDebug();
