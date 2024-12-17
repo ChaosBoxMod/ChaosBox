@@ -88,10 +88,10 @@ void fucker(uint64 steamid)
         Error("FUCK YOU");
     }
 
-    elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
-    {
-        Error("FUCK YOU");
-    }
+//    elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
+//   {
+//       Error("FUCK YOU");
+//    }
 
     elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199560025992)
     {
