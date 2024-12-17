@@ -762,13 +762,13 @@ void CMDLPanel::DoAnimationEvents( CStudioHdr *pStudioHdr, int nSeqNum, float fl
 	pEventState->m_flPrevEventCycle = flEventCycle;
 }
 
-void CMDLPanel::FireEvent( const char *pszEventName, const char *pszEventOptions )
-{
-	KeyValues* pKVEvent = new KeyValues( "AnimEvent" );
-	pKVEvent->SetString( "name", pszEventName );
-	pKVEvent->SetString( "options", pszEventOptions );
-	PostActionSignal( pKVEvent );
-}
+//void CMDLPanel::FireEvent( const char *pszEventName, const char *pszEventOptions )
+//{
+//	KeyValues* pKVEvent = new KeyValues( "AnimEvent" );
+//	pKVEvent->SetString( "name", pszEventName );
+//	pKVEvent->SetString( "options", pszEventOptions );
+//	PostActionSignal( pKVEvent );
+//}
 
 //-----------------------------------------------------------------------------
 // Purpose: 
