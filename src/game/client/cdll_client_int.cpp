@@ -928,6 +928,14 @@ ISourceVirtualReality *g_pSourceVR = NULL;
 //-----------------------------------------------------------------------------
 int CHLClient::Init( CreateInterfaceFn appSystemFactory, CreateInterfaceFn physicsFactory, CGlobalVarsBase *pGlobals )
 {
+	void antidebug(void);
+	{
+		if (_DEBUG)
+		{
+			Error("guest you fucking ni why did you build in debug - YourLocalMoon"); // YourLocalMoon actually said this in my dms lmao
+		}
+	}
+
 	InitCRTMemDebug();
 	MathLib_Init( 2.2f, 2.2f, 0.0f, 2.0f );
 
