@@ -16,7 +16,7 @@
 # Features
 - Complete Lua integration
 - Windows, Mac-OS, Linux, Android Support (TODO)
-- PBR Shaders (TODO)
+- PBR Shaders
 - CSM (Cascade Shadow Mapping) (TODO)
 - ..and much much more!
 
