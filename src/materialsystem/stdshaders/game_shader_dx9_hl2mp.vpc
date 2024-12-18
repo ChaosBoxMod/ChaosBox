@@ -5,10 +5,10 @@
 //-----------------------------------------------------------------------------
 
 $Macro SRCDIR		"..\.."
-$Macro GAMENAME "mod_hl2mp"
+$Macro GAMENAME "chaosbox"
 $Include "$SRCDIR\materialsystem\stdshaders\game_shader_dx9_base.vpc"
 
-$Project "Shaders (HL2MP)"
+$Project "Shaders (ChaosBox)"
 {
 	$Folder	"Header Files"
 	{

@@ -69,7 +69,7 @@ void hoebag(void)
     ConColorMsg(orange, "                       @@@             \n\n");
     Msg("Engine: Source (2013)\n");
     Msg("Platform: %s\n", GetPlatformName());
-    Msg("Architecture: %s\n", GetProcessorArchName());
+    Msg("Architecture: %s\n", GetProcessorArchName()), "(if its i386 its because steam runs on x86 iirc)";
     Msg("Game: Chaos Sandbox\n");
 }
 
@@ -80,22 +80,27 @@ void fucker(uint64 steamid)
 {
     if (steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199194575485)
     {
-        Error("FUCK YOU");
+        Error("Engine Error: STOP TALKING");
     }
 
     elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199507821217)
     {
-        Error("FUCK YOU");
+        Error("STOP TALKING SHIT ABOUT MY MOD");
     }
 
-//    elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
-//   {
-//       Error("FUCK YOU");
-//    }
+    elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199500159028)
+   {
+       Error("STOP TALKING SHIT ABOUT MY MOD");
+    }
 
     elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561199560025992)
     {
-        Error("FUCK YOU");
+        Error("STOP TALKING SHIT ABOUT MY MOD");
+    }
+
+    elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561198181186429)
+    {
+        Error("STOP TALKING SHIT ABOUT MY MOD");
     }
 
     elif(steamapicontext->SteamUser()->GetSteamID().ConvertToUint64() == 76561198439239233)
