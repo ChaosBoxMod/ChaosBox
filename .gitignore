@@ -60,3 +60,9 @@ config.cfg
 [Rr]elease*/
 *.pdb
 .vs/
+*.dll
+*.cache
+*.dat
+*.exe
+*.html
+*.exe
