@@ -23,7 +23,7 @@
 
 #if defined ( WIN32 )
 	#include <WinDef.h>
-	#include <../dx9sdk/include/dsound.h>
+//	#include <../dx9sdk/include/dsound.h>
 #endif
 
 #include "tier0/memdbgon.h"
