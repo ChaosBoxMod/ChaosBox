@@ -1,0 +1,218 @@
+tc1.o: tc1.c ../config.h ../src/sys.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/features.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/predefs.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/gnu/stubs-32.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/stdio.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../lib/gcc/i686-unknown-linux-gnu/4.6.3/include/stddef.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/types.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/typesizes.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/libio.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/_G_config.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/wchar.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../lib/gcc/i686-unknown-linux-gnu/4.6.3/include/stdarg.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/stdio_lim.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sys_errlist.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/wait.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/signal.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigset.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/signum.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/time.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/siginfo.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigaction.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigcontext.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/sigcontext.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/linux/types.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/types.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm-generic/types.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm-generic/int-ll64.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/bitsperlong.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm-generic/bitsperlong.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/linux/posix_types.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/linux/stddef.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/posix_types.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/posix_types_32.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigstack.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/ucontext.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigthread.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/resource.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/resource.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/time.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/waitflags.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/waitstatus.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/endian.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/endian.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/byteswap.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/ctype.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/xlocale.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/dirent.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/dirent.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/posix1_lim.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/local_lim.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/linux/limits.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/locale.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/locale.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/stdlib.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/types.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/select.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/select.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/sysmacros.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/alloca.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/string.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/unistd.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/posix_opt.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/environments.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/confname.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/getopt.h \
+ ../src/histedit.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/wchar.h \
+ /valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/wctype.h
+
+../config.h:
+
+../src/sys.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/cdefs.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/features.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/predefs.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/gnu/stubs.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/wordsize.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/gnu/stubs-32.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/stdio.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../lib/gcc/i686-unknown-linux-gnu/4.6.3/include/stddef.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/types.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/typesizes.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/libio.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/_G_config.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/wchar.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../lib/gcc/i686-unknown-linux-gnu/4.6.3/include/stdarg.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/stdio_lim.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sys_errlist.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/wait.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/signal.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigset.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/signum.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/time.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/siginfo.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigaction.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigcontext.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/sigcontext.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/linux/types.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/types.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm-generic/types.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm-generic/int-ll64.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/bitsperlong.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/linux/posix_types.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/linux/stddef.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/posix_types.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/asm/posix_types_32.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigstack.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/ucontext.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/pthreadtypes.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/sigthread.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/resource.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/resource.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/time.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/waitflags.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/waitstatus.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/endian.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/endian.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/byteswap.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/ctype.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/xlocale.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/dirent.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/dirent.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/posix1_lim.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/local_lim.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/linux/limits.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/locale.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/locale.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/stdlib.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/types.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/select.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/select.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/sys/sysmacros.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/alloca.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/string.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/unistd.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/posix_opt.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/environments.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/confname.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/getopt.h:
+
+../src/histedit.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/bits/wchar.h:
+
+/valve/steam-runtime/amd64/i686-unknown-linux-gnu/bin/../i686-unknown-linux-gnu/sysroot/usr/include/wctype.h:
